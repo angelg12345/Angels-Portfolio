@@ -1,34 +1,60 @@
 
 * {
-    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     background-color: #24252A;
 }
-
+/*These are all the items that make up the header section*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
+    padding: 3%;
    
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
     min-width: 400px;
     list-style-type: none;
-    font-family: 'Josefin Sans', sans-serif;
-   
+    font-family: 'Josefin Sans', sans-serif;     
 }
 
-nav a {
-    font-weight: bold;
-    text-decoration: none;
+button, .CONTACT {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 4px 11px;
+    background-color: #427ef5 ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+ 
+
+}
+ .CONTACT :hover {
     color: white;
+}
+nav a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+    
 }
 
 h1 {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
 }
+
+.nav-items li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-items li :hover {
+   color: white;
+}
+
