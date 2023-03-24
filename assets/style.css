@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    
 }
 /*These are all the items that make up the header section*/
 header {
@@ -11,6 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 3%;
+    background-color: #24252A;
    
 }
 
@@ -44,7 +45,7 @@ nav a {
     
 }
 
-h1 {
+h3 {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     cursor: pointer;
@@ -58,3 +59,46 @@ h1 {
    color: white;
 }
 
+body {
+    position: relative;
+    background-color: #454752;
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 4rem;
+    max-width: 107rem;
+   
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    gap: 10rem;
+    height: 25rem;
+    justify-content: center;
+    position: relative;
+}
+
+.her-main {
+    align-items: center;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    position: relative;
+}
+
+.her-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2%;
+}
