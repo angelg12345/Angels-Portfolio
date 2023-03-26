@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 3%;
-    background-color: #24252A;
+    background-color: #2E5266;
    
 }
 
@@ -32,6 +32,7 @@ button, .CONTACT {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    color: #D3D0CBFF;
  
 
 }
@@ -39,7 +40,7 @@ button, .CONTACT {
     color: white;
 }
 nav a {
-    color: gray;
+    color: #D3D0CBFF;
     text-decoration: none;
     font-weight: bold;
     
@@ -58,10 +59,10 @@ h1 {
 .nav-items li :hover {
    color: white;
 }
-
+/* This is all below the nav in the body section. this is going to be the home section */
 body {
     position: relative;
-    background-color: #454752;
+    background-color: #6E8898FF;
 
 }
 
@@ -97,16 +98,24 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-h2, p{
-    color: white;
+ p{
+    color: #D3D0CBFF;
     font-family: 'Josefin Sans', sans-serif;
     padding: 2%;
+    font-size: 130%;
+
 }
 
+h2 {
+    font-size: 300%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    padding: 2%;
+}
 img {
     position: relative;
     width: 300px;
     height: 200px;
     border-radius: 50% 40% 30% 70%;
-   
 }
+
