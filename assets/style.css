@@ -1,3 +1,7 @@
+:root {
+    --dark:#2E5266;
+    --light-text: #D3D0CBFF;
+}
 
 * {
     box-sizing: border-box;
@@ -11,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 3%;
-    background-color: #2E5266;
+    background-color: var(--dark);
    
 }
 
@@ -32,7 +36,7 @@ button, .CONTACT {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    color: #D3D0CBFF;
+    color: var(--light-text);
  
 
 }
@@ -40,7 +44,7 @@ button, .CONTACT {
     color: white;
 }
 nav a {
-    color: #D3D0CBFF;
+    color: var(--light-text);;
     text-decoration: none;
     font-weight: bold;
     
@@ -93,13 +97,13 @@ body {
 .her-text {
     display: flex;
     flex-direction: column;
-    max-width: 30rem;
+    max-width: 500px;
     position: relative;
     font-family: 'Josefin Sans', sans-serif;
 }
 
  .home-para{
-    color: #D3D0CBFF;
+    color: var(--light-text);;
     font-family: 'Josefin Sans', sans-serif;
     
     font-size: 130%;
@@ -114,33 +118,57 @@ h2 {
 }
 .picture-of-angel {
     position: relative;
+    border-style: solid;
+    color: white;
     width: 300px;
-    height: 250px;
-    border-radius: 50% 40% 30% 70%;
+    height: 200px;
+    border-radius: 20%  ;
 }
 
 /*This will be the about me section*/
 
 .about-me {
     background-color: #9FB1BCFF;
+    overflow: hidden;
 }
 
 
 
 .about-me-image {
-    position: relative;
-    left: 55px;
-    top: 50px;
-    border-radius: 60px 10px;
+    border-style: solid;
+    border-radius: 20px;
     width: 325px;
-    padding: 10px;
+    border-color: white;
+    float: left;
+    margin: 90px;
+    
 }
 
 .about-text{
-  align-items: center;
+ 
   display: flex;
-  gap: 100px;
-  justify-content: center;
-  position: relative;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10%; 
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 150%;
+}
+
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 200%;
+    color: white;
+}
+
+.about-p {
+    
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--light-text);
+    
+    
 }
 
