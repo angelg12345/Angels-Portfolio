@@ -168,84 +168,117 @@ h4 {
 
 /*This is the my work section*/
 
-.mywork-content {
+.mywork-heading {
     position: relative;
+    left:350px;
+    margin: 10px;
+    width: 600px;
+    padding: 30px;
+
 }
 
-.horiseon-project {
-    height: 500px;
-    width: 800px;
-    float: right;
-    border-radius: 25px;
+.mywork-p {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 150%;
+    color: var(--light-text);
+    padding: 15px;
+    
+}
+/*First project */
+.mywork {
+    padding: 30px;
     margin: 50px;
+}
+
+.mywork-content {
+   position: relative;
+   left: 250px;
+   max-width: 250px;
+  
+   
+  
+}
+.projects-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 5rem;
+    display: grid ;
+    height: auto;
+}
+
+.proj1 {
+    flex-direction: row;
+    gap: 7rem;
+    height: 30rem;
+    width: 70rem;
+    padding: 2rem;
+    display: center;
+    
+}
+
+.projects-container .proj1 {
+    background-color: #9FB1BCFF;
+    border-radius: 15px;
+    display: flex;
+}
+.project-img {
+   height: 400px;
+    width: 500px;
+    border-radius: 25px;
     opacity: .5;
     transition: all 0.3s ease 0s;
     border-style: solid;
-    border-color: white;
+    border-color: white;    
 }
 
-.horiseon-project:hover {
+.project-img:hover {
     opacity: 1.0;
 }
 
-.first-textbox {
-    position: absolute;
-    top: 400px;
-    right: 600px;
-    border: solid;
-    border-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+.projects-container .first-textbox {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    color: white;
 }
 
-.password-generator {
-    height: 500px;
-    width: 800px;
-    float: left;
-    border-radius: 25px;
-    margin: 50px;
-    opacity: .5;
-    transition: all 0.3s ease 0s;
-    border-style: solid;
-    border-color: white;
+.projects-container .first-textbox .h4text {
+    margin-bottom: 2rem;
+    text-align: center;
+
 }
 
-.password-generator:hover {
-    opacity: 1.0;
+.projects-container .first-textbox p {
+    text-align: center;
+    text-transform: none;
+    color: var(--light-text);
+    font-size: 150%;
 }
+/*second project */
 
-.second-textbox {
-    position: absolute;
-    top: 1000px;
-    left: 50px;
-    border: solid;
-    border-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
-.coding-quiz {
-    height: 500px;
-    width: 800px;
-    float: right;
-    border-radius: 25px;
-    margin: 50px;
-    opacity: .5;
-    transition: all 0.3s ease 0s;
-    border-style: solid;
-    border-color: white;
-}
 
-.coding-quiz:hover {
-    opacity: 1.0;
-}
 
-.third-textbox {
-    position: absolute;
-    top: 1600px;
-    right: 619px;
-    border: solid;
-    border-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+
+
+
+
+.text1 {
+    color: white;
+    font-size: 150%;
 }
+/*Third project */
+
+
+
+
