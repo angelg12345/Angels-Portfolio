@@ -1,5 +1,5 @@
 :root {
-    --dark:#2E5266;
+    --dark:#9FB1BCFF;
     --light-text: #D3D0CBFF;
 }
 
@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 3%;
-    background-color: var(--dark);
+    background-color: #fff;
    
 }
 
@@ -32,27 +32,23 @@ nav ul {
 button, .CONTACT {
     font-family: 'Josefin Sans', sans-serif;
     padding: 4px 11px;
-    background-color: #427ef5 ;
-    border: none;
+    background-color: red;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    color: var(--light-text);
- 
-
 }
  .CONTACT :hover {
     color: white;
 }
 nav a {
-    color: var(--light-text);;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     
 }
 
 h1 {
-    color: white;
+    color: black;
     font-family: 'Josefin Sans', sans-serif;
     cursor: pointer;
 }
@@ -62,12 +58,12 @@ h1 {
 }
 
 .nav-items li :hover {
-   color: white;
+   color: red;
 }
 /* This is all below the nav in the body section. this is going to be the home section */
 body {
     position: relative;
-    background-color: #6E8898FF;
+    background-color: #f9f9f9ff;
 
 }
 
@@ -103,14 +99,14 @@ body {
 }
 
  .home-para{
-    color: var(--light-text);;
+    color: black;
     font-size: 130%;
 
 }
 
 h2 {
     font-size: 300%;
-    color: white;
+    color: black;
     padding: 2%;
 }
 .picture-of-angel {
@@ -125,7 +121,7 @@ h2 {
 /*This will be the about me section*/
 
 .about-me {
-    background-color: #9FB1BCFF;
+    background-color: white;
     overflow: hidden;
     flex-direction: column;
 }
@@ -151,19 +147,19 @@ h2 {
 }
 
 h3 {
-    color: white;
+    color: black;
     font-size: 150%;
 }
 
 h4 {
     font-size: 200%;
-    color: white;
+    color: black;
 }
 
 .about-p {
     
    
-    color: var(--light-text);
+    color: black;
 }
 
 /*This is the my work section*/
@@ -180,14 +176,14 @@ h4 {
 .mywork-p {
     text-transform: uppercase;
     font-weight: 700;
-    color: white;
+    color: black;
     padding: 20px;
     font-size: 30px;
 }
 
 h5 {
     font-size: 150%;
-    color: var(--light-text);
+    color: black;
     padding: 15px;
     
 }
@@ -212,6 +208,63 @@ h5 {
     display: grid ;
     height: auto;
 }
+/*First project which has to be bigger than the rest*/
+.proj-big {
+    flex-direction: row;
+    gap: 5rem;
+    height: 45rem;
+    width: 80rem;
+    padding: 2rem;
+    display: center;
+    
+}
+
+.projects-container .proj-big {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+}
+.project-big-img {
+    height: 600px;
+     width: 750px;
+     border-radius: 25px;
+     opacity: .5;
+     transition: all 0.3s ease 0s;
+     border-style: solid;
+     border-color: white;    
+     margin-top: 55px;
+ }
+
+ .project-big-img:hover {
+    opacity: 1.0;
+}
+
+.projects-container .big-textbox {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    width: 350px;
+    color: white;
+}
+
+.projects-container .big-textbox .h4text {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 75px;
+    text-transform: uppercase;
+
+}
+
+.projects-container .big-textbox p {
+    text-align: center;
+    text-transform: none;
+    color: black;
+    font-size: 250%;
+}
+
+
+ /*OTher 2 projects*/
 
 .proj1 {
     flex-direction: row;
@@ -224,7 +277,7 @@ h5 {
 }
 
 .projects-container .proj1 {
-    background-color: #9FB1BCFF;
+    background-color: white;
     border-radius: 15px;
     display: flex;
 }
@@ -265,15 +318,12 @@ h5 {
     font-size: 150%;
 }
 
-.text1 {
-    color: white;
-    font-size: 150%;
-}
+
 
 
 /*contact section */
 .contact-sec {
-    padding: 11rem 0;
+    padding: 7rem 0;
     background-color: white;
 }
 .contact-content {
