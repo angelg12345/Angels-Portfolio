@@ -32,7 +32,6 @@ nav ul {
 button, .CONTACT {
     font-family: 'Josefin Sans', sans-serif;
     padding: 4px 11px;
-    background-color: red;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -60,24 +59,28 @@ h1 {
 .nav-items li :hover {
    color: red;
 }
-/* This is all below the nav in the body section. this is going to be the home section */
+
 body {
     position: relative;
     background-color: #f9f9f9ff;
 
 }
-
+/* This is all below the nav in the body section. this is going to be the home section */
+.container1 {
+    margin: 100px 100px 0px 100px;
+    padding-bottom: 300px;
+    max-width: 107rem;
+   
+}
 .container {
     margin: 0 auto;
     padding: 0 4rem;
     max-width: 107rem;
    
 }
-
 .content {
     align-items: center;
     display: flex;
-    
     height: 25rem;
     justify-content: center;
     position: relative;
@@ -114,11 +117,18 @@ h2 {
     border-style: solid;
     color: white;
     width: 300px;
-    height: 200px;
-    border-radius: 20%  ;
+    height: 250px;
+    border-radius: 50% 45%  ;
 }
 
 /*This will be the about me section*/
+
+.container2 {
+    margin: 75px;
+    padding: 5px;
+    max-width: 107rem;
+   
+}
 
 .about-me {
     background-color: white;
@@ -133,9 +143,14 @@ h2 {
     border-radius: 20px;
     width: 325px;
     border-color: white;
-    float: left;
     margin: 90px;
-    
+}
+
+.aboutme-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 .about-text{
@@ -143,11 +158,12 @@ h2 {
   display: flex;
   gap: 10px;
   flex-direction: column;
-  padding: 10%; 
+  padding: 100px; 
+  max-width: 500px;
 }
 
 h3 {
-    color: black;
+    color: #4bc97b; ;
     font-size: 150%;
 }
 
@@ -157,34 +173,33 @@ h4 {
 }
 
 .about-p {
-    
-   
     color: black;
 }
 
 /*This is the my work section*/
 
 .mywork-heading {
-    position: relative;
-    left:350px;
-    margin: 10px;
-    width: 600px;
-    padding: 30px;
-
+   display: flex;
+      padding: 60px;
+    flex-direction: column;
+    width: 800px;
 }
 
 .mywork-p {
     text-transform: uppercase;
     font-weight: 700;
-    color: black;
-    padding: 20px;
-    font-size: 30px;
+    color: #4bc97b;
+   margin-bottom: 1rem;
+    font-size: 20px;
 }
 
 h5 {
     font-size: 150%;
     color: black;
-    padding: 15px;
+
+    
+  
+  
     
 }
 /* projects */
@@ -253,6 +268,8 @@ h5 {
     text-align: center;
     font-size: 75px;
     text-transform: uppercase;
+    color:#2d2e32;
+    
 
 }
 
@@ -261,6 +278,7 @@ h5 {
     text-transform: none;
     color: black;
     font-size: 250%;
+    color: #767676;
 }
 
 
@@ -308,14 +326,16 @@ h5 {
 .projects-container .first-textbox .h4text {
     margin-bottom: 2rem;
     text-align: center;
+    color: #2d2e32;
 
 }
 
 .projects-container .first-textbox p {
     text-align: center;
     text-transform: none;
-    color: var(--light-text);
+    color: black;
     font-size: 150%;
+    color: #767676;
 }
 
 
