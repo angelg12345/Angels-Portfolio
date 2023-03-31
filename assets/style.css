@@ -1,3 +1,4 @@
+
 :root {
     --dark:#9FB1BCFF;
     --light-text: #D3D0CBFF;
@@ -142,6 +143,7 @@ h2 {
     border-style: solid;
     border-radius: 20px;
     width: 325px;
+    height: 310px;
     border-color: white;
     margin: 90px;
 }
@@ -174,6 +176,7 @@ h4 {
 
 .about-p {
     color: black;
+    font-size: 20px;
 }
 
 /*This is the my work section*/
@@ -196,11 +199,6 @@ h4 {
 h5 {
     font-size: 150%;
     color: black;
-
-    
-  
-  
-    
 }
 /* projects */
 .mywork {
@@ -265,8 +263,10 @@ h5 {
 
 .projects-container .big-textbox .h4text {
     margin-bottom: 2rem;
+    margin-top: 40px;
+    padding: 5px;
     text-align: center;
-    font-size: 75px;
+    font-size: 40px;
     text-transform: uppercase;
     color:#2d2e32;
     
@@ -277,7 +277,7 @@ h5 {
     text-align: center;
     text-transform: none;
     color: black;
-    font-size: 250%;
+    font-size: 230%;
     color: #767676;
 }
 
@@ -288,7 +288,7 @@ h5 {
     flex-direction: row;
     gap: 7rem;
     height: 30rem;
-    width: 70rem;
+    width: 80rem;
     padding: 2rem;
     display: center;
     
@@ -342,8 +342,14 @@ h5 {
 
 
 /*contact section */
+.container4 {
+    margin: 20px;
+    padding: 3px;
+   
+   
+}
 .contact-sec {
-    padding: 7rem 0;
+    padding: 10px;
     background-color: white;
 }
 .contact-content {
@@ -351,25 +357,35 @@ h5 {
     flex-direction: column;
     align-items: center;
 }
+.contact-title {
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+    width: 800px;
+}
 
 .contact-title p {
-    font-size: 3.0rem;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    margin-top: 25px;
+    color: #4bc97b;
 }
 .contact-icons {
     display: flex;
     flex-wrap: wrap;
     gap: 8rem;
-    margin-top: 6rem;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 
 
 .contact-h3 {
-color: black;
-font-size: 2.5rem
+color: #2d2e32;
+font-size: 2.5rem;
+
 }
 
 .contact-info {
@@ -385,10 +401,14 @@ font-size: 2.5rem
 }
 .second-h3 {
     font-size: 3.0rem;
-    color: black;
+    color: #2d2e32;
 }
 
 .contact-p {
     font-size: 1.5rem;
 }
 
+.contact-p1 {
+    font-size: 1.5rem;
+    padding: 8px;
+}
