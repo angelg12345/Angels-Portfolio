@@ -183,9 +183,11 @@ h4 {
 
 .mywork-heading {
    display: flex;
-      padding: 60px;
+padding: 60px;
     flex-direction: column;
-    width: 800px;
+ 
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -203,17 +205,14 @@ h5 {
 }
 /* projects */
 .mywork {
-    padding: 30px;
-    
+    padding: 100px;
 }
 
 .mywork-content {
-   align-items: center;
-   justify-content: center;
-   display: block;
-  
-   
-  
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
 }
 .projects-container {
     grid-template-columns: 1fr;
@@ -228,10 +227,10 @@ h5 {
 .proj-big {
     flex-direction: row;
     gap: 5rem;
-    height: 45rem;
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
     padding: 2rem;
-    display: center;
+    
     
 }
 
@@ -239,10 +238,11 @@ h5 {
     background-color: white;
     border-radius: 15px;
     display: flex;
+    width: fit-content;
 }
 .project-big-img {
-    height: 600px;
-     width: 750px;
+    height: 350px;
+     width: 550px;
      border-radius: 25px;
      opacity: .5;
      transition: all 0.3s ease 0s;
@@ -258,18 +258,17 @@ h5 {
 .projects-container .big-textbox {
     display: flex;
     flex-direction: column;
-
     text-align: center;
-    width: 350px;
+    width: 300px;
     color: white;
 }
 
 .projects-container .big-textbox .h4text {
     margin-bottom: 2rem;
     margin-top: 40px;
-    padding: 5px;
+    padding: 4px;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     text-transform: uppercase;
     color:#2d2e32;
     
@@ -280,7 +279,7 @@ h5 {
     text-align: center;
     text-transform: none;
     color: black;
-    font-size: 230%;
+    font-size: 200%;
     color: #767676;
 }
 
@@ -291,7 +290,7 @@ h5 {
     flex-direction: row;
     gap: 7rem;
     height: 30rem;
-    width: 80rem;
+    width: fit-content;
     padding: 2rem;
     display: center;
     
@@ -301,10 +300,11 @@ h5 {
     background-color: white;
     border-radius: 15px;
     display: flex;
+    
 }
 .project-img {
-   height: 400px;
-    width: 500px;
+   height: 300px;
+    width: 400px;
     border-radius: 25px;
     opacity: .5;
     transition: all 0.3s ease 0s;
@@ -485,6 +485,12 @@ font-size: 2.5rem;
         font-size: 1.2rem;
     }
 /*The my projects part of the mobile view*/
+html,body {
+    overflow-x: hidden;
+}
+.mywork {
+    max-width: max-content;
+}
 .mywork-heading {
     align-items: center;
 }
@@ -506,7 +512,69 @@ font-size: 2.5rem;
 }
 
 /*First project*/
+.projects-container .proj-big {
+    flex-direction: column!important;
+    height: 55rem;
+    width: fit-content;
+    
+}
 
+.projects-container .project-big-img {
+ height: 350px;
+width: 300px;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+}
 
+.projects-container .big-textbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    align-items: center;
+}
+
+.projects-container .big-textbox .h4text {
+    font-size: 1.7rem;
+}
+.projects-container .big-textbox p {
+    font-size: 1.7rem;
+    display: flex;
+    text-align: center;
+    width: 30%;
+}
+
+/*other 2 projects*/
+
+.projects-container .proj1  {
+    flex-direction: column!important;
+    height: 60rem;
+    
+}
+.project-img {
+    height: 300px;
+     width: 250px;
+     border-radius: 25px;
+     opacity: .5;
+     transition: all 0.3s ease 0s;
+     border-style: solid;
+     border-color: white;    
+ }
+
+ .projects-container .first-textbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    color: white;
+}
+.projects-container .first-textbox p {
+    text-align: center;
+    display: flex;
+    width: 20%;
+    font-size: 150%;
+    color: #767676;
+}
 
 }
