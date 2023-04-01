@@ -6,6 +6,10 @@
     font-family: 'Josefin Sans', sans-serif; 
     
 }
+body {
+    position: relative;
+    background-color: #f9f9f9ff;
+}
 /*These are all the items that make up the header section*/
 header {
     display: flex;
@@ -22,11 +26,9 @@ nav ul {
     padding: 0px 20px;
     min-width: 400px;
     list-style-type: none;
-    font-family: 'Josefin Sans', sans-serif;     
 }
 
-button, .CONTACT {
-    font-family: 'Josefin Sans', sans-serif;
+button, .CONTACT { 
     padding: 4px 11px;
     border-radius: 50px;
     cursor: pointer;
@@ -44,7 +46,6 @@ nav a {
 
 h1 {
     color: black;
-    font-family: 'Josefin Sans', sans-serif;
     cursor: pointer;
 }
 
@@ -56,21 +57,10 @@ h1 {
    color: red;
 }
 
-body {
-    position: relative;
-    background-color: #f9f9f9ff;
-
-}
 /* This is all below the nav in the body section. this is going to be the home section */
 .container1 {
     margin: 100px 100px 0px 100px;
     padding-bottom: 300px;
-    max-width: 107rem;
-   
-}
-.container {
-    margin: 0 auto;
-    padding: 0 4rem;
     max-width: 107rem;
    
 }
@@ -81,7 +71,6 @@ body {
     justify-content: center;
     position: relative;
 }
-
 .her-main {
     align-items: center;
     display: flex;
@@ -89,20 +78,16 @@ body {
     justify-content: center;
     position: relative;
 }
-
 .her-text {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     position: relative;
 }
-
  .home-para{
-    color: black;
     font-size: 130%;
 
 }
-
 h2 {
     font-size: 300%;
     color: black;
@@ -117,7 +102,7 @@ h2 {
     border-radius: 50% 45%  ;
 }
 
-/*This will be the about me section*/
+/*About me section*/
 
 .container2 {
     margin: 75px;
@@ -133,13 +118,10 @@ h2 {
 }
 
 
-
 .about-me-image {
-    border-style: solid;
     border-radius: 20px;
     width: 325px;
     height: 310px;
-    border-color: white;
     margin: 90px;
 }
 
@@ -151,39 +133,41 @@ h2 {
 }
 
 .about-text{
- 
   display: flex;
   gap: 10px;
   flex-direction: column;
   padding: 100px; 
   max-width: 500px;
 }
-
 h3 {
     color: #4bc97b; ;
     font-size: 150%;
 }
-
 h4 {
     font-size: 200%;
     color: black;
 }
-
 .about-p {
-    color: black;
+    color: #2d2e32;
     font-size: 20px;
 }
 
 /*This is the my work section*/
-
+.mywork {
+    padding: 100px;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 4rem;
+    max-width: 107rem;
+}
+/*My work heading section*/
 .mywork-heading {
    display: flex;
-padding: 60px;
+    padding: 60px;
     flex-direction: column;
- 
     align-items: center;
     justify-content: center;
-    
 }
 
 .mywork-p {
@@ -198,10 +182,8 @@ h5 {
     font-size: 150%;
     color: black;
 }
-/* projects */
-.mywork {
-    padding: 100px;
-}
+/* project main containers */
+
 
 .mywork-content {
     align-items: center;
@@ -218,6 +200,7 @@ h5 {
     align-items: center;
     justify-content: center;
 }
+
 /*First project which has to be bigger than the rest*/
 .proj-big {
     flex-direction: row;
@@ -378,8 +361,6 @@ h5 {
     margin-bottom: 80px;
 }
 
-
-
 .contact-h3 {
 color: #2d2e32;
 font-size: 2.5rem;
@@ -412,15 +393,18 @@ font-size: 2.5rem;
 }
 
 
-/*This will be the media query*/
+/*Media Screens*/
 @media screen and (max-width:768px) {
-     header {
+/*This is the header section*/
+    html,body {
+    overflow-x: hidden;
+    }
+    header {
         flex-direction: column;
         justify-content: center;
         padding: 10px;
      
     }
-
     nav ul {
         flex-direction: column;
         min-width: 0;
@@ -430,21 +414,34 @@ font-size: 2.5rem;
     nav li {
         margin-bottom: 10px;
     }
-
+    h1 {
+        font-size: 2rem;
+    }
+/*This is the home section*/
     .container1 {
         margin: 50px 20px 0;
         padding-bottom: 150px;
     }
-    .container2 {
-        margin: 50px 20px 0;
-        padding-bottom: 50px;
-    }
+
     .her-main{
         flex-direction: column;
         justify-content: center;
         gap: 30px;
         margin-top: 100px;
         align-items: center;
+    }
+    .home-para {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+/*This is the about me section*/
+    .container2 {
+        margin: 50px 20px 0;
+        padding-bottom: 50px;
     }
 
     .about-me {
@@ -465,31 +462,17 @@ font-size: 2.5rem;
         padding: 20px;
         align-items: center;
     }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
     h3 {
         font-size: 1.5rem
     }
     h4 {
         font-size: 2rem;
     }
-    h5 {
-        font-size: 1.5rem;
-       width: 150px;   
-    }
+ 
 
-    .home-para {
-        font-size: 1.2rem;
-    }
-/*The my projects part of the mobile view*/
-html,body {
-    overflow-x: hidden;
-}
+   
+/*My work section*/
+
 .mywork {
     padding: 0px;
 }
@@ -497,6 +480,12 @@ html,body {
 .mywork-p {
     font-size: 3rem;
 }
+
+h5 {
+    font-size: 1.5rem;
+   width: 150px;   
+}
+
 .mywork-content {
     display: flex;
     flex-direction: column;
