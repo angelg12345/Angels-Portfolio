@@ -186,6 +186,7 @@ h4 {
       padding: 60px;
     flex-direction: column;
     width: 800px;
+    
 }
 
 .mywork-p {
@@ -203,13 +204,13 @@ h5 {
 /* projects */
 .mywork {
     padding: 30px;
-    margin: 50px;
+    
 }
 
 .mywork-content {
-   position: relative;
-   left: 250px;
-   max-width: 250px;
+   align-items: center;
+   justify-content: center;
+   display: block;
   
    
   
@@ -220,13 +221,15 @@ h5 {
     grid-gap: 5rem;
     display: grid ;
     height: auto;
+    align-items: center;
+    justify-content: center;
 }
 /*First project which has to be bigger than the rest*/
 .proj-big {
     flex-direction: row;
     gap: 5rem;
     height: 45rem;
-    width: 80rem;
+    width: 100%;
     padding: 2rem;
     display: center;
     
@@ -411,4 +414,25 @@ font-size: 2.5rem;
 .contact-p1 {
     font-size: 1.5rem;
     padding: 8px;
+}
+
+
+/*This will be the media query*/
+@media screen and (max-width:768px) {
+     header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+     
+    }
+
+    nav ul {
+        flex-direction: column;
+        min-width: 0;
+        padding: 20px 0;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
 }
