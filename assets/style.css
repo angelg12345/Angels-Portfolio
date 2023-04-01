@@ -1,9 +1,4 @@
 
-:root {
-    --dark:#9FB1BCFF;
-    --light-text: #D3D0CBFF;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -436,9 +431,13 @@ font-size: 2.5rem;
         margin-bottom: 10px;
     }
 
-    .container1, .container2 {
+    .container1 {
         margin: 50px 20px 0;
         padding-bottom: 150px;
+    }
+    .container2 {
+        margin: 50px 20px 0;
+        padding-bottom: 50px;
     }
     .her-main{
         flex-direction: column;
@@ -449,7 +448,7 @@ font-size: 2.5rem;
     }
 
     .about-me {
-        margin: 50px 0;
+        margin: 50px 0 ;
     }
     .aboutme-content {
         flex-direction: column;
@@ -457,6 +456,14 @@ font-size: 2.5rem;
     }
     .about-me-image{
         margin:20px auto;
+    }
+    .about-p {
+       width: 250px;
+   
+    }
+    .about-text {
+        padding: 20px;
+        align-items: center;
     }
     
     h1 {
@@ -473,12 +480,7 @@ font-size: 2.5rem;
     }
     h5 {
         font-size: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        padding: 100px;
-        max-width: 500px;
-        align-items: center;
-        
+       width: 150px;   
     }
 
     .home-para {
@@ -489,34 +491,25 @@ html,body {
     overflow-x: hidden;
 }
 .mywork {
-    max-width: max-content;
+    padding: 0px;
 }
-.mywork-heading {
-    align-items: center;
-}
+
 .mywork-p {
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-size: 3rem;
 }
 .mywork-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 50px;
 }
 
 /*First project*/
 .projects-container .proj-big {
     flex-direction: column!important;
-    height: 55rem;
+    height: fit-content;
     width: fit-content;
-    
+    gap: 10px;
 }
 
 .projects-container .project-big-img {
@@ -542,26 +535,24 @@ width: 300px;
     font-size: 1.7rem;
     display: flex;
     text-align: center;
-    width: 30%;
+    width: auto;
 }
 
 /*other 2 projects*/
 
 .projects-container .proj1  {
     flex-direction: column!important;
-    height: 60rem;
-    
+    height: fit-content;
+    width: fit-content;
+    gap: 5px;
+    padding-bottom: 10px;
 }
-.project-img {
-    height: 300px;
-     width: 250px;
-     border-radius: 25px;
-     opacity: .5;
-     transition: all 0.3s ease 0s;
-     border-style: solid;
-     border-color: white;    
- }
-
+.projects-container .project-img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    
+   }
  .projects-container .first-textbox {
     display: flex;
     flex-direction: column;
@@ -572,7 +563,6 @@ width: 300px;
 .projects-container .first-textbox p {
     text-align: center;
     display: flex;
-    width: 20%;
     font-size: 150%;
     color: #767676;
 }
